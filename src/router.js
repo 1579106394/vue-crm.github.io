@@ -9,6 +9,7 @@ import ShopcarContainer from './components/tabbar/ShopcarContainer.vue'
 // 3.创建路由对象
 const router = new VueRouter({
   routes: [ // 配置路由规则
+    { path: '/', component: HomeContainer },
     { path: '/home', component: HomeContainer },
     { path: '/member', component: MemberContainer },
     { path: '/search', component: SearchContainer },

@@ -37,3 +37,5 @@
 2.使用vue-resource的this.$http.get获取数据
 3.获取到的数据，要保存到data身上
 4.使用v-for循环渲染每个item项
+
+## 改造九宫格区域的样式
