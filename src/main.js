@@ -6,7 +6,10 @@ import VueRouter from 'vue-router'
 // 1.2安装路由
 Vue.use(VueRouter)
 
-
+// 2.1 导入vue-resource
+import VueResource from 'vue-resource'
+// 2.2 安装vue-resource
+Vue.use(VueResource)
 
 
 // 导入MUI的样式
@@ -22,6 +25,11 @@ Vue.use(Mint)
 // 按需导入mint-ui中的组件
 // import { Header } from 'mint-ui'
 // Vue.component(Header.name, Header)
+
+// import { Swipe, SwipeItem } from 'mint-ui';
+
+// Vue.component(Swipe.name, Swipe);
+// Vue.component(SwipeItem.name, SwipeItem);
 
 
 // 1.3 导入自己的router.js路由模块
