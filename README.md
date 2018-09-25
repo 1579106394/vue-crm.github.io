@@ -21,3 +21,11 @@
  + 拷贝扩展字体库ttf文件，到项目中
  + 为购物车小图标添加如下样式 'mui-icon mui-icon-extra mui-icon-extra-cart'
 3.要在中间区域放置一个router-view来展示路由匹配到的组件
+
+
+## 改造tabbar为router-link
+
+
+## 设置路由高亮
+
+## 点击tabbar中的路由链接，展示对应的路由组件
