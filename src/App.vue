@@ -5,7 +5,7 @@
 
 
         <!-- 中间的路由 router-view区域 -->
-
+        <router-view></router-view>
 
 
         <!-- 底部Tabbar区域 -->
@@ -28,10 +28,6 @@
                 </router-link>
             </nav>
 
-        <h1>123</h1>
-
-
-        
     </div>
 </template>
 
