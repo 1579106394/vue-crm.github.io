@@ -4,7 +4,7 @@ import Vue from 'vue'
 
 // 导入MUI的样式
 import './lib/mui/css/mui.css'
-
+import './lib/mui/css/icons-extra.css'
 
 // 按需导入好像没用，所以换直接导入
 import Mint from 'mint-ui'
