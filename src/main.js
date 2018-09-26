@@ -50,6 +50,8 @@ import app from './App.vue'
 
 // 设置请求的根路径
 Vue.http.options.root = 'http://47.89.21.179:8080'
+// 全局设置post时候表单数据格式的组织形式
+Vue.http.options.emulateJSON = true
 
 
 var vm = new Vue({
