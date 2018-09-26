@@ -67,7 +67,7 @@
         },
         methods: {
             getLunbotu() { // 获取轮播图数据的方法
-                this.$http.get('http://47.89.21.179:8080/api/getlunbo').then(result => {
+                this.$http.get('api/getlunbo').then(result => {
                     // console.log(result.body)
                     if (result.body.status === 0) {
                         this.lunbotuList = result.body.message

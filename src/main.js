@@ -6,6 +6,15 @@ import VueRouter from 'vue-router'
 // 1.2安装路由
 Vue.use(VueRouter)
 
+// 导入时间格式化插件
+import moment from 'moment'
+
+// 定义全局过滤器
+Vue.filter('dateFormat', function(dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+  return moment(dataStr).format(pattern)
+})
+
+
 // 2.1 导入vue-resource
 import VueResource from 'vue-resource'
 // 2.2 安装vue-resource
@@ -39,7 +48,8 @@ import router from './router.js'
 // 导入app跟组件
 import app from './App.vue'
 
-
+// 设置请求的根路径
+Vue.http.options.root = 'http://47.89.21.179:8080'
 
 
 var vm = new Vue({
