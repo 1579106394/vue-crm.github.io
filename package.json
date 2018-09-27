@@ -4,7 +4,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --contentBase src --port 3000 --hot --host 192.168.0.108"
+    "dev": "webpack-dev-server --open --contentBase src --port 3000 --hot --host 192.168.0.111"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-component": "^0.10.1",
+    "babel-plugin-transform-remove-strict-mode": "^0.0.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",

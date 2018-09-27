@@ -3,7 +3,7 @@
         <!-- 轮播图区域 -->
         <mt-swipe :auto="4000">
             <!-- 在组件中使用v-for循环的话，一定要使用key -->
-            <mt-swipe-item v-for="item in lunbotuList" :key="item.url">
+            <mt-swipe-item v-for="item in lunbotuList" :key="item.img">
                 <img :src="item.img" alt="">
             </mt-swipe-item>
         </mt-swipe>
