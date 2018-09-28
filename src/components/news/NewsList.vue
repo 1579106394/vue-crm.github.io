@@ -3,7 +3,7 @@
         <ul class="mui-table-view">
             <li class="mui-table-view-cell mui-media" v-for="item in newslist" :key="item.id">
                 <router-link :to="'/home/newsinfo/' + item.id">
-                    <img class="mui-media-object mui-pull-left" :src="item.img_url">
+                    <img class="mui-media-object mui-pull-left" :src="'http://cms-bucket.nosdn.127.net/2018/09/27/364a8811c30a4f068271e3f209a0d180.png?imageView&thumbnail=140y88&quality=85'">
                     <div class="mui-media-body">
                         <h1>{{ item.title }}</h1>
                         <p class='mui-ellipsis'>
