@@ -116,6 +116,15 @@
             addToShopCar() {
                 // 添加到购物车
                 this.ballFlag = !this.ballFlag
+                // 拼接处一个要保存到store中car数组里的商品信息对象
+                var goodsinfo = {
+                    id: this.id,
+                    count: this.selectedCount,
+                    price: this.goodsinfo.sell_price,
+                    selected: true
+                }
+                // 调用store中的mutations来将商品加入购物车
+                this.$store.commit('addToCar', goodsinfo)
             },
             beforeEnter(el) {
                 el.style.transform = "translate(0,0)"
@@ -133,7 +142,7 @@
                 const ballPosition = this.$refs.ball.getBoundingClientRect()
                 // 获取徽标在页面中的位置
                 const badgePosition = document.getElementById('badge').getBoundingClientRect()
-                
+
                 const xDist = badgePosition.left - ballPosition.left
                 const yDist = badgePosition.top - ballPosition.top
 
